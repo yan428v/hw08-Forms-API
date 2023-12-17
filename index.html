@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration for something</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <h1>Registration for something</h1>
+        <form name="register" action="https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_s4i2v8CSfa4Kut46zUsongeKTLdWloulgRmz5Ghm5cTY1eprjXv8JlxAyWDi96PH" method="get">
+            <div><p>Username</p>
+                <label class="username">
+                    <input type="text" name="username"
+                           placeholder="Enter username" autocomplete="on"
+                           autofocus>
+                </label>
+            </div>
+            <div><p>Email</p>
+                <label class="email">
+                    <input type="email" name="email" autocomplete="on"
+                           placeholder="Enter email">
+                </label>
+            </div>
+            <div><p>Password</p>
+                <label class="password">
+                    <input type="password" name="pass"
+                           placeholder="Enter password" autocomplete="off"
+                    >
+                </label>
+            </div>
+            <div><p>Repeat password</p>
+                <label class="password">
+                    <input type="password" name="pass"
+                           placeholder="Enter password" autocomplete="off"
+                    >
+                </label>
+            </div>
+            <div class="firstName"><p>First Name</p>
+                <label>
+                    <input class="input-fs-nm" type="text" name="firstName"
+                           placeholder="Enter first name" autocomplete="on"
+                    >
+                </label>
+            </div>
+            <div class="lastName"><p>Last Name</p>
+                <label>
+                    <input class="input-ls-nm" type="text" name="lastName"
+                           placeholder="Enter last name" autocomplete="on"
+                    >
+                </label>
+            </div>
+            <div><p>Country</p>
+                <label class="label-country">
+                    <select name="country">
+                        <option value="azeroth">Azeroth</option>
+                        <option value="mordor">Mordor</option>
+                        <option value="rivendell">Rivendell</option>
+                        <option value="hogwarts">Hogwarts</option>
+                        <option value="panem">Panem</option>
+                        <option value="narnia">Narnia</option>
+                        <option value="alderaan">Alderaan</option>
+                        <option value="dorne">Dorne</option>
+                        <option value="elysium">Elysium</option>
+                        <option value="midgard">Midgard</option>
+                        <option value="mystara">Mystara</option>
+                        <option value="elysia">Elysia</option>
+                        <option value="astrakhan">Astrakhan</option>
+                        <option value="elyria">Elyria</option>
+                        <option value="gondor">Gondor</option>
+                        <option value="eldorado">El Dorado</option>
+                        <option value="oz">Emerald City (Oz)</option>
+                        <option value="rapture">Rapture</option>
+                    </select>
+                </label>
+            </div>
+            <div><p>Date of Birth:</p>
+                <label for="dob">
+                    <input type="date" id="dob" name="dob">
+                </label>
+            </div>
+            <div class="fpd">
+                <div class="gender">Gender:
+                    <label>Male:
+                        <input type="radio" name="gender" value="male">
+                    </label>
+                    <label>Female:
+                        <input type="radio" name="gender" value="female">
+                    </label>
+                </div>
+                <div class="class">Class:
+                    <label>Dinozavr:
+                        <input type="radio" name="class" value="dino">
+                    </label>
+                    <label>Pivozavr:
+                        <input type="radio" name="class" value="pivo">
+                    </label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="reset">Clear</button>
+                <button type="submit" formtarget="_blank">Send</button>
+            </div>
+        </form>
+        <img id="cat" src="#" alt="cat">
+    </main>
+</body>
+</html>
